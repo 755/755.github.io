@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: Обо мне
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![avatar](http://www.gravatar.com/avatar/4036599925a98f666af58ce953022b01.png?s=200)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Николай Назаров.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Связаться со мной можно по email [nazarov755@gmail.com](mailto:nazarov755@gmail.com).
