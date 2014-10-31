@@ -93,11 +93,20 @@ return true;
 {% highlight php %}
 $file = basename(str_replace('audio:', '', $filebyUid['userfield']));
 $path = $path_record.$file;
-if ($file == 'deleted') {
+if ($file == 'deleted' || !is_file($path)) {
     // Specified file has been deleted
     Header('HTTP/1.1 404 Not Found');
     die("<b>404 "._tr("no_file")." </b>");
 }
+{% endhighlight %}
+
+Так же необходимо изменить выше строку 
+{% highlight php %}
+if ($file == 'deleted' || !is_file($path)) {
+{% endhighlight %}
+на
+{% highlight php %}
+if ($file == 'deleted') {
 {% endhighlight %}
 
 После этих изменений, при запросе файла, он будет переадресован в новый виртуальных хост.
